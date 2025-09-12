@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMirror - Your Personal Reflection Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="material-icons" style="color: rgba(100, 130, 200, 0.8);">psychology</span>
+                MindMirror
+            </div>
+            <div class="nav-links">
+                <a href="#features" onclick="smoothScroll('#features')"><span class="material-icons">star</span> Features</a>
+                <a href="journey.html"><span class="material-icons">timeline</span> Our Journey</a>
+                <a href="#preview" onclick="smoothScroll('#preview')"><span class="material-icons">play_circle</span> Try Demo</a>
+                <a href="#download" onclick="smoothScroll('#download')"><span class="material-icons">download</span> Download</a>
+                <a href="legal.html"><span class="material-icons">gavel</span> Legal</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content glass-card" data-aos="fade-up" data-aos-delay="200">
+                <h1 data-aos="fade-up" data-aos-delay="400">Reflect. Grow. Thrive.</h1>
+                <p data-aos="fade-up" data-aos-delay="600">Your private, offline companion for daily reflection, mood tracking, and personal growth. No internet required, complete privacy guaranteed.</p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+                    <button class="btn-primary" onclick="scrollToSection('download')"><span class="material-icons">download</span> Download Now</button>
+                    <button class="btn-secondary" onclick="scrollToSection('preview')"><span class="material-icons">play_arrow</span> Try Demo</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 data-aos="fade-up">Why Choose MindMirror?</h2>
+                <div class="features-grid">
+                    <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon"><span class="material-icons" style="color: rgba(100, 130, 200, 0.8);">lock</span></div>
+                        <h3>100% Private</h3>
+                        <p>Completely offline. Your thoughts stay on your device.</p>
+                    </div>
+                    <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon"><span class="material-icons" style="color: rgba(80, 180, 170, 0.8);">analytics</span></div>
+                        <h3>Smart Analytics</h3>
+                        <p>Discover patterns in your mood and reflection habits.</p>
+                    </div>
+                    <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon"><span class="material-icons" style="color: rgba(255, 200, 100, 0.8);">palette</span></div>
+                        <h3>Beautiful Themes</h3>
+                        <p>Seasonal themes that adapt to your preferences.</p>
+                    </div>
+                    <div class="feature-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon"><span class="material-icons" style="color: rgba(255, 150, 150, 0.8);">favorite</span></div>
+                        <h3>Daily Affirmations</h3>
+                        <p>Personalized affirmations to boost your wellbeing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="preview" class="preview-section">
+            <div class="container">
+                <h2 data-aos="fade-up">Try MindMirror</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Experience the app right here - no download needed for the demo</p>
+                <div class="preview-container glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div id="app-preview" class="app-preview">
+                        <!-- App preview will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download-section">
+            <div class="container">
+                <div class="download-card glass-card" data-aos="fade-up">
+                    <h2 data-aos="fade-up" data-aos-delay="100">Download MindMirror</h2>
+                    <p data-aos="fade-up" data-aos-delay="200">Available for Windows, macOS, and Linux</p>
+                    <div class="download-buttons">
+                        <button class="download-btn" data-platform="windows" data-aos="fade-right" data-aos-delay="300">
+                            <span class="platform-icon"><span class="material-icons" style="font-size: 2rem; color: rgba(100, 130, 200, 0.8);">computer</span></span>
+                            <div>
+                                <div class="platform-name">Windows</div>
+                                <div class="platform-detail">Windows 10+</div>
+                            </div>
+                        </button>
+                        <button class="download-btn" data-platform="mac" data-aos="fade-up" data-aos-delay="400">
+                            <span class="platform-icon"><span class="material-icons" style="font-size: 2rem; color: rgba(100, 130, 200, 0.8);">laptop_mac</span></span>
+                            <div>
+                                <div class="platform-name">macOS</div>
+                                <div class="platform-detail">macOS 10.15+</div>
+                            </div>
+                        </button>
+                        <button class="download-btn" data-platform="linux" data-aos="fade-left" data-aos-delay="500">
+                            <span class="platform-icon"><span class="material-icons" style="font-size: 2rem; color: rgba(100, 130, 200, 0.8);">terminal</span></span>
+                            <div>
+                                <div class="platform-name">Linux</div>
+                                <div class="platform-detail">Ubuntu 18.04+</div>
+                            </div>
+                        </button>
+                    </div>
+                    <div id="download-status" class="download-status"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="container">
+            <p><span class="material-icons">copyright</span> 2024 MindMirror. Your privacy, your reflection, your growth.</p>
+        </div>
+    </footer>
+    
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="preview.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+        
+        // Smooth scroll function
+        function smoothScroll(target) {
+            event.preventDefault();
+            const element = document.querySelector(target);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+        
+        window.smoothScroll = smoothScroll;
+    </script>
+</body>
+</html>
